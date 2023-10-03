@@ -1,0 +1,71 @@
+.facility-cards {
+  margin-top: 20px;
+  .q-gutter-md {
+    width: 100%;
+    height: 230px;
+    transition: 0.5s;
+    .q-card {
+      padding: 0;
+      width: 100%;
+      box-shadow: 0 7px 10px -7px rgb(0 0 0 / 55%);
+      position: relative;
+      display: inline-grid;
+      margin: 5px;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 139px;
+      }
+      .q-card__section {
+        margin-bottom: 10px;
+        span {
+          margin: 20px;
+        }
+        p {
+          padding: 11px 0 1px 13px;
+          font-size: 13px;
+        }
+      }
+      i {
+        position: absolute;
+        top: 0;
+        margin: 7px;
+        cursor: pointer;
+        right: 0;
+        color: $base-white;
+        display: none;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 3px;
+      }
+      i.delete {
+        background: $negative-1;
+      }
+      i.edit {
+        top: 23px;
+        background: $primary;
+      }
+    }
+    &:hover {
+      transform: translateY(3px);
+      .q-card {
+        box-shadow: 0 7px 10px -7px rgb(0 0 0 / 30%);
+        i {
+          display: block;
+        }
+      }
+    }
+  }
+}
+.facility-cards .q-gutter-md .q-card .q-card__section p:first-child {
+  font-size: 19px;
+}
+.content-fcilities {
+  margin-top: 50px;
+}
+.origin-card {
+  min-height: 280px !important;
+}
+.upload-image {
+  width: 100%;
+}

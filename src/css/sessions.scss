@@ -1,0 +1,91 @@
+.mainsection {
+  .time {
+    text-align: center;
+    padding-top: 35px;
+  }
+  .vir-sperator {
+    width: 1px;
+    height: 30px;
+    margin: 10px auto;
+    background: $primary;
+  }
+  .card {
+    position: relative;
+    border: 1px solid silver;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgb(40 40 90 / 9%), 0 3px 6px 0 rgb(0 0 0 / 7%);
+    .label {
+      top: 0;
+      left: 0;
+      width: fit-content;
+      background: $primary;
+      padding: 8px;
+      color: $base-white;
+      font-size: 15px;
+      font-weight: 500;
+      border-top-left-radius: 10px;
+    }
+    .content {
+      margin: 20px;
+      .header-text {
+        color: $base-black;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 0 10px 0;
+      }
+      .body-text {
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: none;
+      color: grey;
+    }
+    .edit-icon {
+      font-size: 25px;
+      right: 7px;
+      top: 35px;
+    }
+    &:hover {
+      transform: translateY(3px);
+      border-color: $primary;
+      .icon {
+        display: block;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+.exbhibitors-category {
+  .add-speaker-btn {
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    font-weight: 400;
+    margin: 0;
+    transition: 0.1s;
+    padding: 0;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-transform: capitalize;
+    width: 95px;
+    background-color: #944677;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,174 @@
+.content {
+  .my-card {
+    padding: 0;
+    position: relative;
+    transition: 0.3s;
+    box-shadow: 0 7px 10px -7px rgb(0 0 0 / 55%);
+    border-radius: 0;
+    .parent-image {
+      width: 100%;
+      height: 190px;
+    }
+    .image-cover {
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 7px 20px -7px rgb(0 0 0 / 36%);
+      padding-bottom: 7px;
+      border-bottom: 1px solid $base-white;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    .title span {
+      display: inline-block;
+      font-size: 17px;
+      margin-top: 26px;
+      margin-left: 21px;
+    }
+    .news-data {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -16px;
+      margin: auto;
+      width: fit-content;
+      width: fit-content;
+      padding: 4px;
+      cursor: pointer;
+      color: $base-white;
+      font-size: 13px;
+      background-color: $base-white;
+      color: $base-black;
+      border-radius: 3px;
+    }
+    .news-data > img {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-right: 10px;
+    }
+    .data {
+      display: inline-block;
+    }
+
+    .icon-calendar {
+      margin-right: 10px;
+      color: $primary;
+      font-size: 15px;
+    }
+  }
+  .q-card__section {
+    p {
+      font-size: 5px;
+      width: 100%;
+      margin: 0;
+      padding-left: 16px;
+      padding-right: 16px;
+      color: rgba(0, 0, 0, 0.3);
+      margin-top: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  .see-more {
+    margin: 50px;
+    color: $primary !important;
+    margin-top: -7px !important;
+    transition: all 0.3s;
+  }
+  .see-more:hover {
+    font-size: 18px !important;
+  }
+  .edit-icon {
+    position: absolute;
+    top: 26px;
+    right: 10px;
+    transition: 0.5s;
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 3px;
+    .edit-icon2 {
+      display: none;
+      background-color: $primary;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+      right: 0;
+      color: $base-white;
+      font-size: 14px;
+      border-radius: 5px;
+      padding: 3px;
+    }
+  }
+  .close-icon {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 3px;
+    .close-icon2 {
+      display: none;
+      background-color: $negative-1;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 18px;
+      right: 0;
+      color: $base-white;
+      font-size: 14px;
+      border-radius: 5px;
+      padding: 3px;
+    }
+  }
+  .my-card:hover {
+    transform: translateY(3px);
+    box-shadow: 0 7px 10px -7px rgb(0 0 0 / 30%);
+    cursor: pointer;
+    .close-icon2 {
+      display: block;
+    }
+    .edit-icon2 {
+      display: block;
+    }
+  }
+  .q-card .q-card__section p {
+    font-size: 16px;
+    margin-top: 12px;
+    padding-bottom: 15px;
+  }
+}
+
+.q-card > div:first-child,
+.q-card > img:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.table-data {
+  .justify-center.q-mb-md {
+    position: relative;
+    margin-top: 50px;
+  }
+}
+.q-pagination {
+  justify-content: center;
+
+  color: $primary;
+}
+.show {
+  position: absolute;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  p {
+    margin: 0 16px 0 0;
+  }
+  label {
+    width: 7vw;
+  }
+}
+.form-news {
+  position: relative;
+  width: 100%;
+  justify-content: inherit;
+}

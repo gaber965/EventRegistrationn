@@ -1,0 +1,143 @@
+// start login
+.container-login {
+  background: url("../assets/login-background.jpg") no-repeat;
+  opacity: 0.9;
+  background-size: cover;
+  .content {
+    flex-flow: row-reverse;
+    margin: auto 50px;
+    .login-form {
+      background-color: $base-white;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 15px;
+      padding-bottom: 153px;
+      padding-top: 60px;
+      text-align: center;
+      .q-field--with-bottom {
+        padding-bottom: 5px;
+        padding-top: 5px;
+      }
+      .q-field__label {
+        font-size: 15px;
+      }
+      .bg-btn {
+        background-color: $primary;
+        width: 88%;
+        font-size: 15px;
+        text-transform: capitalize;
+        font-weight: normal;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+// strat outline input
+.q-field--filled .q-field__control:after {
+  color: $primary;
+}
+// strat outline input
+.container-login::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(120deg, $base-black, $base-black);
+  opacity: 0.4;
+}
+
+//start media query
+@media (min-width: 300px) and (max-width: 566px) {
+  .container-login .content {
+    width: 96%;
+    justify-content: center;
+    flex-flow: row-reverse;
+    margin: auto;
+  }
+  .container-login .content .login-form {
+    padding-bottom: 170px;
+    padding-top: 0;
+    padding-top: 130px;
+    width: 91%;
+  }
+  .container-login .content .login-form h3 {
+    margin-top: 25px;
+    margin-bottom: 31px;
+    font-size: 37px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container-login .content .login-form {
+    padding-bottom: 26px;
+    padding-top: 0;
+  }
+  .container-login .content .login-form h3 {
+    margin-top: 25px;
+    margin-bottom: 31px;
+    font-size: 37px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container-login .content {
+    flex-flow: row-reverse;
+    margin: auto 115px;
+  }
+  .container-login .content .login-form {
+    padding-bottom: 26px;
+    padding-top: 0;
+  }
+  .container-login .content .login-form h3 {
+    margin-top: 25px;
+    margin-bottom: 31px;
+    font-size: 37px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container-login .content .login-form {
+    padding-bottom: 26px;
+    padding-top: 0;
+  }
+  .container-login .content .login-form h3 {
+    margin-top: 25px;
+    margin-bottom: 31px;
+    font-size: 37px;
+  }
+}
+.drob-down-user {
+  box-shadow: none;
+  margin-right: 22px;
+  float: right;
+  .q-btn-dropdown__arrow {
+    display: none;
+  }
+}
+.drob-down-user::before {
+  box-shadow: none;
+  background-color: $primary;
+}
+.user-menu {
+  padding-left: 18px;
+  padding-right: 18px;
+  .q-icon {
+    margin-right: 10px;
+    color: $base-gray;
+  }
+  .q-item__section--side > .q-icon {
+    font-size: 20px;
+  }
+  .q-item__section--avatar {
+    min-width: 0;
+  }
+  .q-item__section {
+    color: $base-gray;
+  }
+}
+.q-menu .q-item:hover {
+  background-color: rgba(255, 0, 0, 0);
+}
+// end dropdown menu
